@@ -1,4 +1,9 @@
-chronometer
+Timer Tool
 ===========
 
-Chronometer app
+Timer Tool app
+
+Technical feature
+* LocalStorage
+* Support Multi Language
+* Notifications
