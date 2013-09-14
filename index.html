@@ -3,15 +3,11 @@
   <head>
       <meta content="width=device-width, minimumscale=1.0, maximum-scale=1.0" name="viewport"></meta>
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-      <title>Sube al Metro</title>        
+      <title>Tools</title>        
       <link rel="stylesheet" type="text/css" href="css/headers.css" />
       <link rel="stylesheet" type="text/css" href="css/toolbars.css" />
       <link rel="stylesheet" type="text/css" href="css/tabs.css" />
       <link rel="stylesheet" type="text/css" href="css/lists.css" />
-      <link rel="stylesheet" href="js/theme/default/style.css" type="text/css">
-      <link rel="stylesheet" type="text/css" href="css/fontello.css" />
-      <link rel="stylesheet" type="text/css" href="css/fontello-codes.css" />
-      <link rel="stylesheet" type="text/css" href="css/fontello-embedded.css" />
       <link rel="stylesheet" type="text/css" href="css/app.css" />
 
       <script type="text/javascript" src="js/jquery-1.10.2.min.js" charset="utf-8"></script>          
@@ -23,34 +19,26 @@
 		
     <section role="region" id="home-view">
 	
-        <ul role="tablist" data-items="4">
+        <ul role="tablist" data-items="3">
 
           <li id="panel1" role="tab">
-            <a href="#panel1" id="btn-estacion"><img id="estacion" alt="Estaciones" src="img/estacion.png" /></a>
-            <div role="tabpanel" class="active">            
-                  alarma        
-              
+            <a href="#panel1" id="btn-alarm"><img id="alarm" alt="Alarm" src="img/alarm.png" /><br/><span class="activeText">Alarm</span></a>
+            <div role="tabpanel" class="active" id="info-alarm">            
+                Alarm               
             </div>                 
           </li>
 
           <li id="panel2" role="tab">
-            <a href="#panel2" id="btn-mapa"><img alt="Ubicaciones" id="mapa" src="img/mapa.png"/></a>
-            <div id="info-mapa" role="tabpanel">		         
+            <a href="#panel2" id="btn-timer"><img alt="Timer" id="timer" src="img/timer.png"/><br>Timer</a>
+            <div id="info-timer" role="tabpanel">		         
               temporizador
             </div>
           </li>
 
           <li id="panel3" role="tab">
-            <a href="#panel3" id="btn-twitter"><img alt="Twitter" id="twitter" src="img/twitter.png"/></a>
-            <div id="info-tweet" role="tabpanel">            
+            <a href="#panel3" id="btn-chronometer"><img alt="Chronometer" id="chronometer" src="img/chronometer.png"/></br>Chronometro</a>
+            <div id="info-chronometer" role="tabpanel">            
               chronometro
-            </div>
-          </li>
-
-          <li id="panel4" role="tab">
-            <a href="#panel4" id="btn-info"><img id="info" alt="Información" src="img/info.png" /></a>
-            <div id="info-page" role="tabpanel">
-				something else
             </div>
           </li>
           

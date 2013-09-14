@@ -31,7 +31,7 @@ section[role="region"] > header:first-child img {
     padding-top: 7px;
     padding-left: 10px;
     float: left;
-}s
+}
 #home-view {
 	width: 100%;
 	left: 0%;
@@ -164,4 +164,11 @@ section[role="region"] > header:first-child img {
 .condicionHorario {
 	padding-left: 0.7rem;
 	font-size: 1.2rem;
+}
+
+#info-alarm, #info-timer, #info-chronometer {
+	padding: 4rem 1rem 1rem;
+}
+.activeText {
+	color: rgb(98, 198, 245);
 }

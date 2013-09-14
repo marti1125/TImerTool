@@ -1,37 +1,26 @@
 
 function btnEvents(btnName){
 	$('#btn-' + btnName).click(function (){
-		$('#settings-view').removeClass('bajar');
 		$('.active').removeClass('active');		
-		$('#titulo').html($('#' + btnName).attr('alt'));
-        $('#estacion').attr('src','img/estacion.png');
-        $('#mapa').attr('src','img/mapa.png');
-        $('#twitter').attr('src','img/twitter.png');
-        $('#info').attr('src','img/info.png');
-        $('#'+btnName).attr('src','img/'+btnName+'2.png');
+		$('.activeText').removeClass('activeText');			
+        $('#alarm').attr('src','img/alarm.png');
+        $('#timer').attr('src','img/timer.png');
+        $('#chronometer').attr('src','img/chronometer.png');
+        $('.activeText').css('color','rgb(98, 198, 245)');      
+        $('#'+btnName).attr('src','img/'+btnName+'2.png');        
 	});
 }
 
-$(document).ready(function(){
-    
-	
-
-	  
-
-    
-
-    
- 
-	
+$(document).ready(function(){	
 
 	$('.active').addClass('active');
-    $('#estacion').attr('src','img/estacion2.png');
+    $('#alarm').attr('src','img/alarm2.png');
+    $('.activeText').addClass('activeText');   
 
-  	var buttons = ['estacion', 'mapa', 'twitter', 'info'];
-  		$.map(buttons, function(button){
-    		btnEvents(button);
-  		});
+  	var buttons = ['alarm', 'timer', 'chronometer'];
+	$.map(buttons, function(button){
+		btnEvents(button);
+	});
 
-	
 		
 });
